@@ -16,7 +16,7 @@ class GoogLeNet(chainer.Chain):
         'inception_3a':15, 'inception_3b':20, 'pool3':21,
         'inception_4a':26, 'inception_4b':31, 'inception_4c':36, 'inception_4d':41, 'inception_4e':46,
         'pool4':47, 'inception_5a':52, 'inception_5b':57,
-        'pool5':58, 'loss3/classifier':59}
+        'pool5':58, 'loss3_classifier':59}
 
     def call_inception(self, x, name):
         out1 = self[name + '/1x1'](x)
